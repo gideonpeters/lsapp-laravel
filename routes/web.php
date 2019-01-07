@@ -21,9 +21,7 @@
 //     return 'This is user '.$name.' with an id of '.$id;
 // });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
 
 Route::get('/about', function () {
     return view('pages.about');
